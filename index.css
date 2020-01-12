@@ -23,30 +23,133 @@
   box-sizing: 0;
   font-family: "BigJohnPRO-Regular", "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  color: #292D41;
+}
+
+h1, .h1 {
+  font-size: 4rem;
+}
+
+h2, .h2 {
+  font-size: 3.5rem;
+}
+
+h3, .h3 {
+  font-size: 3rem;
+}
+
+h4, .h4 {
+  font-size: 2.5rem;
+}
+
+h5, .h5 {
+  font-size: 2rem;
+}
+
+h6, .h6 {
+  font-size: 1.5rem;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 5px solid #fe7b6a;
+  width: 30%;
+  border-radius: 5px;
+}
+a:hover{
+  color: #fe7b6a ;
 }
 
 #Header {
   background-image: url(./assets/img/pizza-header.png);
-  background-size: 75%;
+  background-image: linear-gradient(to top, transparent 0%, #00000084 90%), url(./assets/img/pizza-header.png);
+  background-size: 95%;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
-  position: relative;
+  background-position: 350% 0%;
+}
+.botao{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  
+}
+.botao a{
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+
+  /* font-family: "BigJohnPRO-Regular", Arial, Helvetica, sans-serif; */
 }
 
-.nav-item {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: bold;
+.title{
+   font-family: "BigJohnPRO-bold", Arial, Helvetica, sans-serif;
+}
+.title span{
+  color: #fe7b6a;
+  font-size: 4rem;
+}
+.btn{
   color: #ffffff;
 }
-
-.botao-baixar {
+.btn:hover{
+  color: #ffffff;
+}
+.nav-item{
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.nav-link{
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "BigJohnPRO-Regular",Arial, Helvetica, sans-serif;
+}
+.primario {
   background-color: #fe7b6a;
-  border-radius: 20px;
+}
+.primario:hover {
+  background-color: #292D41;
 }
 
 
-#mascara-header{
+.mascara{
 background-image: url(./assets/img/mascara-header.svg);
-background-size: 100% 100%;
+/* background-color: #ff0ff050; */
+background-size: cover;
+}
+.mouse img{
+  max-width: 25px;
+}
+
+.caixa{
+  padding: 10px;
+  background-color: #fe7b6a;
+  border-radius: 0 30px 30px 0 ;
+}
+.wrapper{
+  margin: 0 30px;
+}
+.titulo-accordion{
+  margin-bottom: 10px;
+  align-items: center;
+}
+.accordion{
+  /* margin: 0 30px; */
+}
+.accordion img{
+  width: 30px;
+  margin-right: 20px;
+}
+
+.panel{
+  margin-left: 30px;
+}
+
+.secundario{
+  background-color: #292d41;
+}
+.secundario:hover{
+  background-color: #fe7b6a;
 }

@@ -15,53 +15,118 @@
       <link href="./assets/fonts/BigJohnPRO-Regular.otf" rel="stylesheet">
       <link href="./assets/fonts/BigJohnPRO-Light.otf" rel="stylesheet">
 
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
    </head>
 
    <body>
 
       <header id="Header">
-         <div id="mascara-header">
-            <div class="container bg-transparent py-3">
-               <nav class="navbar navbar-expand-lg navbar-light ">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""></a>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item ">
-                           <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a class="nav-link" href="#">Restaurantes</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Entregador</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#" class="btn my-2 my-sm-0 botao-baixar">Baixar Agora</a>
-                        </li>
-                     </ul>
-                  </div>
-               </nav>
-            </div>
-            <section id="secao-1" class="container">
-               <div class="textos">
-                  <h1>Coma bem
-                     Todo dia com o
-                     appetitoso!</h1>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Nunc dignissim justo eu dolor maliquam eros fermentum. </h3>
-                  <butto class="cta-principal">COMO FUNCIONA?</butto>
-                  <div class="social">
-                     <i class="fab fa-facebook-square"></i>
+         <div class="mascara">
+            <div class="container">
+               <div class="bg-transparent py-3">
+                  <nav class="navbar navbar-expand-lg">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""></a>
+                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                           <li class="nav-item ">
+                              <a class="nav-link" href="#">Sobre</a>
+                           </li>
+                           <li class="nav-item ">
+                              <a class="nav-link" href="#">Restaurantes</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Entregador</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#" class="btn my-2 my-sm-0 botao primario">Baixar Agora</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="section-fade-out"
+                  style="background-image: url(&quot;assets/app/cover.jpg&quot;); background-position: center bottom;">
+                  <div class="container mt-5">
+                     <div class="row">
+                        <div class="col-md-6 my-5 text-lg-left text-center align-self-center">
+                           <h1 class="title">Coma bem <br> todo dia com o <span class="title">appetitoso</span>!</h1>
+                           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Nunc dignissim justo eu dolor maliquam eros fermentum. </p>
+                           <div class="pt-5 social">
+                              <a class="btn text-white" href="#" style="background:#3b5998" target="_blank">
+                                 <i class="fab fa-facebook-f fa-fw fa-1x py-1"></i>
+                              </a>
+                              <a class="btn text-white" href="#" style="background:#cc2127" target="_blank">
+                                 <i class="fa fa-pinterest-p fa-fw fa-1x py-1"></i>
+                              </a>
+                              <a class="btn text-white" href="#" style="background:#55acee" target="_blank">
+                                 <i class="fa fa-twitter fa-fw fa-1x py-1"></i>
+                              </a>
+                           </div>
+                           <button class="mt-5 botao secundario"><a href="">Como Funciona?</a></button>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <img src="./assets/img/mouse.svg" alt="">
-            </section>
+            </div>
          </div>
+         <div class="row mouse">
+            <div class="col-md-12">
+               <img class="img-fluid d-block mx-auto" src="./assets/img/mouse.svg">
+            </div>
+         </div>
+
       </header>
+      <section class=section-1>
+         <div class="py-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 order-2 order-lg-1 ">
+                     <img class="img-fluid d-block caixa" src="./assets/img/caixa.png">
+                  </div>
+                  <div class="d-flex flex-column justify-content-center p-3 col-lg-6 order-1 order-lg-2">
+                     <div class="lead mb-0 px-5">
+                        <h4 class="title">ENTREGADORES</h4>
+                        <hr>
+
+                        <div id="accordion">
+                           <h6 class="accordion"><img class="plus" src="./assets/img/plus.svg" alt=""> Lorem ipsum</h6>
+                           <div class="panel">
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias architecto
+                                 atque debitis eligendi maxime quibusdam provident, nesciunt molestiae incidunt quidem
+                                 veritatis. Eligendi ducimus cumque laudantium commodi cum inventore ab.</p>
+                           </div>
+                           <h6 class="accordion"><img class="plus" src="./assets/img/plus.svg" alt=""> Lorem ipsum</h6>
+                           <div class="panel">
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias architecto
+                                 atque debitis eligendi maxime quibusdam provident, nesciunt molestiae incidunt quidem
+                                 veritatis. Eligendi ducimus cumque laudantium commodi cum inventore ab.</p>
+                           </div>
+                           <h6 class="accordion"><img class="plus" src="./assets/img/plus.svg" alt=""> Lorem ipsum</h6>
+                           <div class="panel">
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias architecto
+                                 atque debitis eligendi maxime quibusdam provident, nesciunt molestiae incidunt quidem
+                                 veritatis. Eligendi ducimus cumque laudantium commodi cum inventore ab.</p>
+                           </div>
+
+                        </div>
+
+                        <button class="btn mt-5 botao secundario">Cadastre-se</button>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
 
       <!-- <main>
@@ -75,7 +140,19 @@
             </div>
          </section>
       </main> -->
+      <script>
+         $(function () {
+            $("#accordion").accordion({
+               collapsible: true
+            });
+         });
 
+         $(document).ready(function () {
+            $("accordion").click(function () {
+               $("plus").addClass("minus");
+            });
+         });
+      </script>
    </body>
 
 </html>

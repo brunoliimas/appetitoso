@@ -88,11 +88,11 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin: 0;
 }
 
 p {
@@ -349,19 +349,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1 {
-  font-size: 2.125rem;
+  font-size: 3rem;
 }
 
 h2, .h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 h3, .h3 {
-  font-size: 1.4875rem;
+  font-size: 1.5rem;
 }
 
 h4, .h4 {
-  font-size: 1.275rem;
+  font-size: 1.25rem;
 }
 
 h5, .h5 {
@@ -2065,35 +2065,16 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #f70655;
-  border-color: #f70655;
+  background-color: #292d41;
+  border: none;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #d20548;
-  border-color: #c50544;
+  background-color: #FE7B6A;
+  borderr: none;
 }
 
-.btn-secondary:focus, .btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(247, 6, 85, 0.5);
-}
-
-.btn-secondary.disabled, .btn-secondary:disabled {
-  color: #fff;
-  background-color: #f70655;
-  border-color: #f70655;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #c50544;
-  border-color: #b90440;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show>.btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(247, 6, 85, 0.5);
-}
 
 .btn-success {
   color: #fff;
@@ -3506,6 +3487,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   text-align: center;
 }
 
+
 .tab-content>.tab-pane {
   display: none;
 }
@@ -3768,6 +3750,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   display: flex !important;
   flex-basis: auto;
 }
+
 
 .navbar-expand .navbar-toggler {
   display: none;
