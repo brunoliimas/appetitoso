@@ -1,0 +1,384 @@
+@font-face {
+  src: url(./assets/fonts/BigJohnPRO-Regular.otf);
+  font-family: "BigJohnPRO-Regular";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(./assets/fonts/BigJohnPRO-Light.otf);
+  font-family: "BigJohnPRO-Light";
+  font-weight: lighter;
+}
+
+@font-face {
+  src: url(./assets/fonts/BigJohnPRO-Bold.otf);
+  font-family: "BigJohnPRO-Bold";
+  font-weight: bold;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200");
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "BigJohnPRO-Regular", "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #292D41;
+}
+
+h1, .h1 {
+  font-size: 4rem;
+}
+
+h2, .h2 {
+  font-size: 3.5rem;
+}
+
+h3, .h3 {
+  font-size: 3rem;
+}
+
+h4, .h4 {
+  font-size: 2.5rem;
+}
+
+h5, .h5 {
+  font-size: 2rem;
+}
+
+h6, .h6 {
+  font-size: 1.5rem;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 150px;
+  border-radius: 5px;
+}
+.hr-primario{
+  border-top: 5px solid #fe7b6a;
+}
+.hr-secundario{
+  border-top: 5px solid #292D41;
+}
+a:hover{
+  color: #fe7b6a ;
+}
+
+#Header {
+  background-image: url(./assets/img/pizza-header.png);
+  background-image: linear-gradient(to top, transparent 0%, #00000084 90%), url(./assets/img/pizza-header.png);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 350% 0%;
+}
+.logo{
+  width: 150px;
+  height: auto;
+}
+.logo-fundo{
+  position: absolute;
+  top: 250px;
+}
+.logo-fundo img{
+  width: 300px;
+}
+.botao{
+  padding: 10px 30px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "BigJohnPRO-Bold",Arial, Helvetica, sans-serif;
+}
+.botao a{
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+
+  /* font-family: "BigJohnPRO-Regular", Arial, Helvetica, sans-serif; */
+}
+
+.title{
+   font-family: "BigJohnPRO-bold", "Montserrat", Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+.title span{
+  color: #fe7b6a;
+  font-size: 4rem;
+}
+.sub-title{
+  font-size: 3rem;
+  font-family: "BigJohnPRO-bold", "Montserrat", Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn{
+  color: #ffffff;
+}
+.btn:hover{
+  color: #ffffff;
+}
+.nav-item{
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.nav-link{
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "BigJohnPRO-Regular",Arial, Helvetica, sans-serif;
+}
+.nav-link:hover{
+  border-bottom: solid 2px #fe7b6a;
+}
+.botao-primario {
+  background-color: #fe7b6a;
+  border-radius: 20px;
+}
+.botao-primario:hover {
+  background-color: #292D41;
+}
+.botao-terciario{
+  background-color: #292D41;
+  /* border-radius: 50px; */
+}
+.botao-terciario:hover{
+  background-color: #495075;
+}
+
+.mascara{
+background-image: url(./assets/img/mascara-header.svg);
+/* background-color: #ff0ff050; */
+background-size: cover;
+}
+.mouse img{
+  max-width: 25px;
+}
+.texto-descricao{
+  position: absolute;
+  bottom: 10px;
+  font-size: 18px;
+  right: 30px;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #292D41;
+  font-family: "BigJohnPRO-Bold", Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+.texto-descricao span{
+  color: #fe7b6a;
+  font-size: 30px;
+  font-family: "BigJohnPRO-Bold", Arial, Helvetica, sans-serif;
+}
+.descricao{
+  position: relative;
+}
+
+.caixa{
+  padding: 10px;
+  background-color: #fe7b6a;
+  border-radius: 20px ;
+
+}
+   
+.wrapper{
+  margin: 0 30px;
+}
+.social a, i{
+  color: #00000050;
+  text-decoration: none;
+}
+
+.titulo-accordion{
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.accordion img{
+  width: 30px;
+  margin-right: 20px;
+}
+
+.panel{
+  margin-left: 30px;
+  height: auto;
+}
+
+.botao-secundario{
+  background-color: #292d41;
+  border-radius: 20px;
+}
+.botao-secundario:hover{
+  background-color: #fe7b6a;
+}
+.mini{
+  border-radius: 20px;
+}
+.section-2{
+  background-image: url(./assets/img/mascara-2.svg);
+   /* background-position: center center; */
+   background-repeat: no-repeat;
+   /* background-attachment: fixed; */
+   background-size: cover;
+   background-color: #ffffff;
+   position: relative; 
+}
+.cta{
+  font-size: 22px;
+}
+.contato{
+  z-index: 1;
+
+}
+.formulario-contato{
+  background-color: #fe7b6a;
+  padding: 60px 40px;
+  border-radius: 20px;
+}
+.mapa{
+  position: absolute;
+  right: 0;
+  bottom: -250px;
+  width: 100vw;
+}
+.rodape{
+  background-image: linear-gradient(#00000050, #00000050), url(./assets/img/footer.png);	
+  background-position: center;	
+  background-size: 100%, 100%;	
+  background-repeat: no-repeat;
+}
+.footer{
+  margin-top: 250px;
+}
+
+.app-store{
+  max-width: 150px;
+}
+.titulo-rodape{
+  font-family: "BigJohnPRO-Bold", "Montserrat", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+}
+.texto-rodape{
+  color: #ffffff;
+  text-decoration: none;
+}
+.texto-rodape a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.texto-rodape a:hover{
+  color: #fe7b6a;
+}
+.copyright{
+  color: #ffffff;
+}
+.icones-social i{
+  font-size: 16px;
+  color: #fe7b6a;
+}
+.icones-social {
+  background-color: #ffffff;
+  padding: 5px 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.modal-container{
+ width: 100vw;
+ height: 100vh;
+ background-color: #00000090;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 2000;
+ display: none;
+ justify-content: center;
+ align-items: center;
+}
+.modal-container.mostrar{
+  display: flex!important;
+}
+.fechar{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #292D41;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+.fechar i{
+  color: #ffffff!important;
+}
+.fechar:hover{
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.modal-cadastro{
+  background-color: #fe7b6a;
+  width: 60%;
+  min-width: 300px;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+@keyframes modal{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mostrar.modal{
+  animation: modal 2s;
+
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.9s;
+}
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+[data-anime="top"] {
+  transform: translate3d(0, 100px, 0);
+}
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d( 0, 0, 0);
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 768px){
+  
+}
+@media (max-width: 600px){
+  .title{
+    font-size: 50px;
+  }
+  .title span{
+    font-size: 50px;
+  }
+ .sub-title{
+    font-size: 30px!important;
+  }
+  .texto-rodape,
+  .titulo-rodape{
+    text-align: center;
+  }
+  
+}
+
