@@ -20,6 +20,9 @@
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+      <!-- Script: Animated entrance -->
+      <script src="js/animate-in.js"></script>
+
 
    </head>
 
@@ -42,16 +45,16 @@
                      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                            <li class="nav-item ">
-                              <a class="nav-link" href="#">Sobre</a>
+                              <a class="nav-link" href="#Sobre">Sobre</a>
                            </li>
                            <li class="nav-item ">
-                              <a class="nav-link" href="#">Restaurantes</a>
+                              <a class="nav-link" href="#Restaurantes">Restaurantes</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="#">Entregador</a>
+                              <a class="nav-link" href="#Entregadores">Entregador</a>
                            </li>
                            <li class="nav-item">
-                              <a href="#" class="btn my-2 my-sm-0 botao botao-primario">Baixar Agora</a>
+                              <a href="#Baixar" class="btn my-2 my-sm-0 botao botao-primario">Baixar Agora</a>
                            </li>
                         </ul>
                      </div>
@@ -66,22 +69,25 @@
                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                               Nunc dignissim justo eu dolor maliquam eros fermentum. </p>
                            <button class="btn mt-5 botao botao-secundario">Como Funciona?</button>
-                           <div class="pt-5 social">
-                              <a class="btn text-white" href="#" style="background:#3b5998" target="_blank">
-                                 <i class="fab fa-facebook-f fa-fw fa-1x py-1"></i>
+                           <div class="pt-5 ">
+                              <a class="social" href="#" target="_blank">
+                                 <i class="fab fa-twitter fa-fw fa-2x py-1"></i>
                               </a>
-                              <a class="btn text-white" href="#" style="background:#cc2127" target="_blank">
-                                 <i class="fab fa-pinterest-p fa-fw fa-1x py-1"></i>
+                              <a class="social" href="#" target="_blank">
+                                 <i class="fab fa-dribbble fa-fw fa-2x py-1"></i>
                               </a>
-                              <a class="btn text-white" href="#" style="background:#55acee" target="_blank">
-                                 <i class="fab fa-twitter fa-fw fa-1x py-1"></i>
+                              <a class="social" href="#" target="_blank">
+                                 <i class="fab fa-instagram fa-fw fa-2x py-1"></i>
                               </a>
+
                            </div>
                         </div>
                      </div>
                      <div class="row mouse">
                         <div class="col-md-12">
-                           <img class="img-fluid d-block mx-auto" src="./assets/img/mouse.svg">
+                           <a href="#Entregadores">
+                              <img class="img-fluid d-block mx-auto" src="./assets/img/mouse.svg">
+                           </a>
                         </div>
                      </div>
                   </div>
@@ -91,16 +97,16 @@
          </div>
 
       </header>
-      <section class="section-1 py-5">
+      <section id="Entregadores" class="section-1 py-5">
          <div class="py-5">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-6 order-1 order-lg-1 ">
-                     <img class="img-fluid d-block caixa" src="./assets/img/caixa.png">
+                  <div class=".col-lg col-md-5 .col-sm-12 order-1 order-md-1 animate-in-left" data-anime="left">
+                     <img class="img-fluid d-block my-3 mx-auto caixa" src="./assets/img/caixa.png">
                   </div>
-                  <div class="d-flex flex-column justify-content-center p-3 col-lg-6 order-2 order-lg-2">
+                  <div class="p-3 col-lg-6 order-2 order-lg-2">
                      <div class="lead mb-0 px-5">
-                        <h4 class="title">ENTREGADORES</h4>
+                        <h2 class="sub-title">Entregadores</h2>
                         <hr class="hr-primario">
 
                         <div id="accordion">
@@ -133,34 +139,72 @@
             </div>
          </div>
       </section>
-      <section class="section-2 ">
+      <section id="Restaurantes" class="section-2 ">
          <div class="text-center text-white">
             <div class="container">
                <div class="row pt-5">
                   <div class="mx-auto col-md-12">
-                     <h4 class="title">CADASTRE O SEU RESTAURANTE</h4>
+                     <h2 class="sub-title">Cadastre seu Restaurante</h2>
                      <hr class="hr-secundario mx-auto">
                   </div>
                </div>
                <div class="row pt-5">
-                  <div class="col-lg-4 col-md-6 py-3">
-                     <img class="img-fluid d-block mx-auto mini" src="./assets/img/pizza-3.png" width="500">
+                  <div class="descricao col-lg-4 col-md-6 py-3  animate-in-left" data-anime="left">
+                     <p class="texto-descricao">
+                        Lorem <br>
+                        <span>20%</span> <br>
+                        Min. Order Value $300</p>
+                     <img class="img-descricao img-fluid d-block mx-auto mini" src="./assets/img/pizza-3.png" width="500">
                   </div>
-                  <div class="col-lg-4 col-md-6 py-3">
+                  <div class="descricao col-lg-4 col-md-6 py-3" data-anime="up">
+                     <p class="texto-descricao">
+                        Get 2 medium <br>
+                        <span>PIZZA</span> <br>
+                        At $1999 each
+                     </p>
                      <img class="img-fluid d-block mx-auto mini" src="./assets/img/pizza-4.png" width="500">
                   </div>
-                  <div class="col-lg-4 col-md-6 py-3">
+                  <div class="descricao col-lg-4 col-md-6 py-3  animate-in-right" data-anime="right">
+                     <p class="texto-descricao">
+                        Lorem <br>
+                        <span>20%</span> <br>
+                        Min. Order Value $300</p>
                      <img class="img-fluid d-block mx-auto mini" src="./assets/img/pizza-3.png" width="500">
                   </div>
                </div>
                <div class="row py-5">
                   <div class="col-md-12">
-                     <button class="btn mt-5 botao botao-secundario cta">QUERO CADASTRAR MEU ESTABELECIMENTO</button>
+                     <!-- Botão para cadastro -->
+                     <button id="Cadastro-Restaurante" type="button" class="btn mt-5 botao botao-secundario cta"
+                        data-toggle="modal" data-target="#cadastroDeRestaurante">QUERO CADASTRAR MEU
+                        ESTABELECIMENTO</button>
+
+                     <!-- Modal -->
+                     <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                        aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 ...
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                 <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <div class="row pt-5 pb-3">
                   <div class="col-md-12">
-                     <h3 class="title text-left">Entre em contato</h3>
+                     <h2 class="sub-title text-left">Entre em contato</h2>
                      <hr class="hr-primario ">
                   </div>
                </div>
@@ -202,36 +246,41 @@
          <div class="py-3 rodape">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-3 col-6 p-3">
+                  <div class="col-md-3 p-3">
                      <img class="app-store py-2" src="./assets/img/google.svg" alt="">
                      <img class="app-store py-2" src="./assets/img/apple.svg" alt="">
                   </div>
-                  <div class="col-lg-3 col-6 p-3">
+                  <div class="col-md-3 p-3">
                      <h5 class="titulo-rodape">Contato</h5>
-                     <p class="texto-rodape mb-2"><a href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank">Lorem ipsum, ,239, Centro <br> Sao Paulo - SP</a></p>
+                     <p class="texto-rodape mb-2"><a href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank">Lorem
+                           ipsum, ,239, Centro <br> Sao Paulo - SP</a></p>
                      <p class="texto-rodape mb-2">Telefone: <a href="+55119999988888">+55 11 99999-88888</a></p>
-                     <p class="texto-rodape mb-2">E-mail: <a href="mail@contato.com">mail@contato.com</a></p>              
+                     <p class="texto-rodape mb-2">E-mail: <a href="mail@contato.com">mail@contato.com</a></p>
                   </div>
                   <div class="col-md-3 p-3">
                      <h5 class="titulo-rodape">Menu</h5>
-                     <p class="texto-rodape mb-2"><a href="https://goo.gl/maps/AUq7b9W7yYJ2">Sobre</a></p>
-                     <p class="texto-rodape mb-2"><a href="https://goo.gl/maps/AUq7b9W7yYJ2">Restaurante</a></p>
-                     <p class="texto-rodape mb-2"><a href="https://goo.gl/maps/AUq7b9W7yYJ2">Entregador</a></p>
-                     <p class="texto-rodape mb-2"><a href="https://goo.gl/maps/AUq7b9W7yYJ2">Baixe o App</a></p>
+                     <p class="texto-rodape mb-2"><a href="#Sobre">Sobre</a></p>
+                     <p class="texto-rodape mb-2"><a href="#Restaurantes">Restaurante</a></p>
+                     <p class="texto-rodape mb-2"><a href="#Entregadores">Entregador</a></p>
+                     <p class="texto-rodape mb-2"><a href="#Baixar">Baixe o App</a></p>
                   </div>
-                  <div class="col-md-3 p-3">
+                  <div class="col-md-3 align-center p-3">
                      <h5 class="titulo-rodape">Siga o Appetitoso</h5>
                      <div class="row">
-                        <div class="col-4 col-md-1 align-self-center mr-3"> <a href="#"  class="icones-social">
+                        <div class="col-4 col-md-2 align-self-center m-2">
+                           <a href="#" class="icones-social">
                               <i class="fab fa-facebook "></i>
                            </a> </div>
-                        <div class="col-4 col-md-1 align-self-center mr-3"> <a href="#" class="icones-social">
+                        <div class="col-4 col-md-2 align-self-center m-2">
+                           <a href="#" class="icones-social">
                               <i class="fab fa-google "></i>
                            </a> </div>
-                        <div class="col-4 col-md-1 align-self-center mr-3"> <a href="#" class="icones-social">
+                        <div class="col-4 col-md-2 align-self-center m-2">
+                           <a href="#" class="icones-social">
                               <i class="fab fa-twitter "></i>
                            </a> </div>
-                        <div class="col-4 col-md-1 align-self-center mr-3"> <a href="#" class="icones-social">
+                        <div class="col-4 col-md-2 align-self-center m-2">
+                           <a href="#" class="icones-social">
                               <i class="fab fa-instagram "></i>
                            </a> </div>
                      </div>
@@ -239,7 +288,7 @@
                </div>
                <div class="row">
                   <div class="col-md-12 text-left">
-                     <p class="mb-0 mt-2 copyright">© 2014-2018 Pingendo. All rights reserved</p>
+                     <p class="mb-0 mt-2 copyright">© 2019 Appetitoso - All rights reserved</p>
                   </div>
                </div>
             </div>
@@ -247,17 +296,41 @@
       </footer>
 
 
-      <!-- <main>
-         <section class="container">
-            <div>
-               <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tempore voluptatem eveniet quaerat
-                  tenetur, et, culpa voluptatibus nisi, facere vero odit. Ipsa nemo fugit saepe provident dolorum est
-                  quibusdam repellat.
-               </p>
-            </div>
-         </section>
-      </main> -->
+      <div id="Modal-Cadastro" class="modal-container">
+         <div class="modal-cadastro">
+            <button class="fechar">
+               <i id="fechar" class="fas fa-times fa-2x"></i>
+            </button>
+            <h3 class="sub-title mb-3">Cadastre seu Restaurante</h3>
+            <form>
+               <div class="form-row">
+                  <div class="form-group col-md-6">
+                     <input type="text" class="form-control" id="form36" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                     <input type="text" class="form-control" id="form37" placeholder="Last Name">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <input type="text" class="form-control" id="form38" placeholder="Company">
+               </div>
+               <div class="form-group">
+                  <input type="email" class="form-control" id="form39" placeholder="Email">
+               </div>
+               <div class="form-row">
+                  <div class="form-group col-md-6">
+                     <input type="number" class="form-control" id="form40" placeholder="Phone (optional)">
+                  </div>
+                  <div class="form-group col-md-6">
+                     <input type="text" class="form-control" id="form41" placeholder="Country">
+                  </div>
+               </div>
+
+               <button type="submit" class="btn botao botao-terciario">Send</button>
+            </form>
+         </div>
+
+      </div>
       <script>
          $(function () {
             $("#accordion").accordion({
@@ -270,7 +343,23 @@
                $("plus").addClass("minus");
             });
          });
+      
       </script>
+      <script src="./index.js"></script>
+      <!-- <script>
+         $(function () {
+            $("#accordion").accordion({
+               collapsible: true
+            });
+         });
+
+         $(document).ready(function () {
+            $("accordion").click(function () {
+               $("plus").addClass("minus");
+            });
+         });
+         
+      </script> -->
    </body>
 
 </html>

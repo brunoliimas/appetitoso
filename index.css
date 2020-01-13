@@ -16,6 +16,8 @@
   font-weight: bold;
 }
 
+
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200");
 *, body, html {
   margin: 0;
@@ -82,7 +84,7 @@ a:hover{
   top: 250px;
 }
 .logo-fundo img{
-  width: 400px;
+  width: 300px;
 }
 .botao{
   padding: 10px 30px;
@@ -100,11 +102,18 @@ a:hover{
 }
 
 .title{
-   font-family: "BigJohnPRO-bold", Arial, Helvetica, sans-serif;
+   font-family: "BigJohnPRO-bold", "Montserrat", Arial, Helvetica, sans-serif;
+   font-weight: bold;
 }
 .title span{
   color: #fe7b6a;
   font-size: 4rem;
+}
+.sub-title{
+  font-size: 3rem;
+  font-family: "BigJohnPRO-bold", "Montserrat", Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .btn{
   color: #ffffff;
@@ -121,6 +130,9 @@ a:hover{
   color: #ffffff;
   font-family: "BigJohnPRO-Regular",Arial, Helvetica, sans-serif;
 }
+.nav-link:hover{
+  border-bottom: solid 2px #fe7b6a;
+}
 .botao-primario {
   background-color: #fe7b6a;
   border-radius: 20px;
@@ -130,9 +142,10 @@ a:hover{
 }
 .botao-terciario{
   background-color: #292D41;
+  /* border-radius: 50px; */
 }
 .botao-terciario:hover{
-  background-color: #292D41;
+  background-color: #495075;
 }
 
 .mascara{
@@ -143,15 +156,40 @@ background-size: cover;
 .mouse img{
   max-width: 25px;
 }
+.texto-descricao{
+  position: absolute;
+  bottom: 10px;
+  font-size: 18px;
+  right: 30px;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #292D41;
+  font-family: "BigJohnPRO-Bold", Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+.texto-descricao span{
+  color: #fe7b6a;
+  font-size: 30px;
+  font-family: "BigJohnPRO-Bold", Arial, Helvetica, sans-serif;
+}
+.descricao{
+  position: relative;
+}
 
 .caixa{
   padding: 10px;
   background-color: #fe7b6a;
   border-radius: 20px ;
+
 }
+   
 .wrapper{
   margin: 0 30px;
 }
+.social a, i{
+  color: #00000050;
+  text-decoration: none;
+}
+
 .titulo-accordion{
   margin-bottom: 10px;
   align-items: center;
@@ -164,6 +202,7 @@ background-size: cover;
 
 .panel{
   margin-left: 30px;
+  height: auto;
 }
 
 .botao-secundario{
@@ -189,12 +228,12 @@ background-size: cover;
   font-size: 22px;
 }
 .contato{
-  z-index: 20;
+  z-index: 1;
 
 }
 .formulario-contato{
   background-color: #fe7b6a;
-  padding: 40px;
+  padding: 60px 40px;
   border-radius: 20px;
 }
 .mapa{
@@ -215,6 +254,11 @@ background-size: cover;
 
 .app-store{
   max-width: 150px;
+}
+.titulo-rodape{
+  font-family: "BigJohnPRO-Bold", "Montserrat", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
 }
 .texto-rodape{
   color: #ffffff;
@@ -238,5 +282,103 @@ background-size: cover;
   background-color: #ffffff;
   padding: 5px 7px;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.modal-container{
+ width: 100vw;
+ height: 100vh;
+ background-color: #00000090;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 2000;
+ display: none;
+ justify-content: center;
+ align-items: center;
+}
+.modal-container.mostrar{
+  display: flex!important;
+}
+.fechar{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #292D41;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+.fechar i{
+  color: #ffffff!important;
+}
+.fechar:hover{
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.modal-cadastro{
+  background-color: #fe7b6a;
+  width: 60%;
+  min-width: 300px;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+@keyframes modal{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mostrar.modal{
+  animation: modal 2s;
 
 }
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.9s;
+}
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+[data-anime="top"] {
+  transform: translate3d(0, 100px, 0);
+}
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d( 0, 0, 0);
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 768px){
+  
+}
+@media (max-width: 600px){
+  .title{
+    font-size: 50px;
+  }
+  .title span{
+    font-size: 50px;
+  }
+ .sub-title{
+    font-size: 30px!important;
+  }
+  .texto-rodape,
+  .titulo-rodape{
+    text-align: center;
+  }
+  
+}
+
